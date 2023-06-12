@@ -14,15 +14,17 @@
 		<title>Rock Paper Scissors</title>
 	</head>
 	<body>
-		<div class= "container-fluid">
+		<div class="container-fluid">
 			<h1>Rock vs Papers vs Scissors</h1>
-			<div id="result"></div>
+			<div id="result">
+				<div id="round-result"></div>
+			</div>
 			<div class="score"></div>
 			<strong>Computer Score:</strong> <span id="computer-score">0</span>
-			<strong>Player Score:</strong> <span id="player-score">0</span> 
-            <button id="scissors" onclick="playRound('scissors')">Scissors</button>
-            <button id="paper" onclick="playRound('paper')">Paper</button>
-            <button id="rock" onclick= "playRound('rock')">Rock</button>
+			<strong>Player Score:</strong> <span id="player-score">0</span>
+			<button id="scissors" onclick="playRound('scissors')">Scissors</button>
+			<button id="paper" onclick="playRound('paper')">Paper</button>
+			<button id="rock" onclick="playRound('rock')">Rock</button>
 			<button
 				type="submit"
 				onclick="restartGame()"
