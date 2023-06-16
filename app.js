@@ -4,8 +4,6 @@ let round = 0;
 const totalRound = 5;
 const playButton = document.querySelectorAll(".play-button");
 
-// Get the play buttons
-const playButtons = document.querySelectorAll('.play-button');
 
 // Function to handle play button click or touch events
 function handlePlayButtonClick(event) {

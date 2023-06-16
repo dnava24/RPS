@@ -1,54 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-:root{
-    --primary-100:#00A896;
-    --primary-200:#008b7a;
-    --primary-300:#09554c;
-    --accent-100:#FF6B6B;
-    --accent-200:#8f001a;
-    --text-100:#333333;
-    --text-200:#5c5c5c;
-    --bg-100:#F2EFE9;
-    --bg-200:#e8e5df;
-    --bg-300:#bfbdb7;
-      
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+:root {
+	--primary-100: #00a896;
+	--primary-200: #008b7a;
+	--primary-300: #09554c;
+	--accent-100: #ff6b6b;
+	--accent-200: #8f001a;
+	--text-100: #333333;
+	--text-200: #5c5c5c;
+	--bg-100: #f2efe9;
+	--bg-200: #e8e5df;
+	--bg-300: #bfbdb7;
 }
-body{
-    background-color: var(--bg-100);
-    color: var(--text-100);
-    font-family: 'Raleway', sans-serif;
+body {
+	background-color: var(--bg-100);
+	color: var(--text-100);
+	font-family: "Raleway", sans-serif;
 }
-h1{
-    color: var(--primary-100);
+h1 {
+	color: var(--primary-100);
 }
-.btn{
-    background-color: var(--accent-100);
-    border-color: var(--accent-100);
-    color: var(--bg-200);
+.btn {
+	background-color: var(--accent-100);
+	border-color: var(--accent-100);
+	color: var(--bg-200);
 }
-.btn:hover{
-    border-color: var(--accent-100);
-    color: var(--text-100);
+.btn:hover {
+	border-color: var(--accent-100);
+	color: var(--text-100);
 }
-#computer-score{
-    color: var(--accent-100);
+#computer-score {
+	color: var(--accent-100);
 }
-#player-score{
-    color: var(--primary-300);
+#player-score {
+	color: var(--primary-300);
 }
-#round-result{
-    font-size: 1.3em;
-    color: var(--text-200);
+#round-result {
+	font-size: 1.3em;
+	color: var(--text-200);
 }
-#play-again{
-   background-color: var(--accent-200);
-   border-color: var(--accent-200);
-   color: var(--bg-100);
+#play-again {
+	background-color: var(--accent-200);
+	border-color: var(--accent-200);
+	color: var(--bg-100);
 }
-.container-fluid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+.container-fluid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
 }

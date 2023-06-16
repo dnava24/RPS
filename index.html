@@ -10,6 +10,10 @@
 			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
 			crossorigin="anonymous"
 		/>
+		<script
+			src="https://kit.fontawesome.com/29f602eaf3.js"
+			crossorigin="anonymous"
+		></script>
 		<link rel="stylesheet" href="styles.css" />
 		<title>Rock Paper Scissors</title>
 	</head>
@@ -19,22 +23,23 @@
 			<div id="round-result">
 				<div id="result"></div>
 			</div>
-			<div class="score"></div>
-			<strong>Computer Score:</strong> <span id="computer-score">0</span>
-			<strong>Player Score:</strong> <span id="player-score">0</span>
+			<div class="score">
+				<strong>Computer Score:</strong> <span id="computer-score">0</span>
+				<strong>Player Score:</strong> <span id="player-score">0</span>
+			</div>
 			<div class="wrapper">
-				<button class="btn play-button" id="Pock" onclick="playRound('Rock')">
-					Rock
+				<button class="btn play-button" id="Rock" onclick="playRound('Rock')">
+					<i class="fa-regular fa-hand-back-fist"></i> Rock
 				</button>
 				<button class="btn play-button" id="Paper" onclick="playRound('Paper')">
-					Paper
+					<i class="fa-regular fa-hand"></i> Paper
 				</button>
 				<button
 					class="btn play-button"
 					id="Scissors"
 					onclick="playRound('Scissors')"
 				>
-					Scissors
+					<i class="fa-regular fa-hand-scissors"></i> Scissors
 				</button>
 				<button
 					type="submit"
