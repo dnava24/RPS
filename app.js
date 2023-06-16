@@ -4,6 +4,21 @@ let round = 0;
 const totalRound = 5;
 const playButton = document.querySelectorAll(".play-button");
 
+// Get the play buttons
+const playButtons = document.querySelectorAll('.play-button');
+
+// Function to handle play button click or touch events
+function handlePlayButtonClick(event) {
+  const playerSelection = event.target.dataset.selection;
+  playRound(playerSelection);
+}
+
+// Add click and touch event listeners to play buttons
+playButtons.forEach(button => {
+  button.addEventListener('click', handlePlayButtonClick);
+  button.addEventListener('touchstart', handlePlayButtonClick);
+});
+
 // Get the computer's choice
 
 function getComputerChoice() {
