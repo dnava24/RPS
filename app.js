@@ -7,7 +7,7 @@ const playButton = document.querySelectorAll(".play-button");
 // Get the computer's choice
 
 function getComputerChoice() {
-	const choices = ["rock", "paper", "scissors"];
+	const choices = ["Rock", "Paper", "Scissors"];
 	return choices[Math.floor(Math.random() * choices.length)];
 }
 
@@ -31,28 +31,22 @@ function playRound(playerSelection) {
 	if (playerSelection === computerSelection) {
 		roundResult = `Try again, its a TIEEEE!`;
 	} else if (
-		(playerSelection === `rock` && computerSelection === `scissors`) ||
-		(playerSelection === `paper` && computerSelection === `rock`) ||
-		(playerSelection === `scissors` && computerSelection === `paper`)
+		(playerSelection === `Rock` && computerSelection === `Scissors`) ||
+		(playerSelection === `Paper` && computerSelection === `Rock`) ||
+		(playerSelection === `Scissors` && computerSelection === `Paper`)
 	) {
-		roundResult = `${playerSelection} wins!`;
+		roundResult = `${playerSelection} beats ${computerSelection}! Player wins!`;
 		playerScore++;
 		round++;
 	} else {
-		roundResult = `${computerSelection} wins!`;
+		roundResult = `${computerSelection} beats ${playerSelection}! Computer wins!`;
 		computerScore++;
 		round++;
 	}
 
 	//display round results
 	const roundResultElement = document.createElement("p");
-	roundResultElement.textContent =
-		" You chose " +
-		playerSelection +
-		" and the computer chose " +
-		computerSelection +
-		". " +
-		roundResult;
+	roundResultElement.textContent = roundResult;
 	document.getElementById("round-result").textContent = "";
 	document.getElementById("round-result").appendChild(roundResultElement);
 
@@ -82,7 +76,7 @@ function endGame() {
 	document.getElementById("play-again").style.display = "inline-block";
 	// Show end game message
 	const endGameElement = document.createElement("h2");
-	endGameElement.textContent = `Congratulations! ${winner} has won the game!`;
+	endGameElement.textContent = `${winner} Wins!`;
 	document.getElementById("round-result").textContent = "";
 	document.getElementById("round-result").appendChild(endGameElement);
    

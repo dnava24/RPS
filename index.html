@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<h1>Rock vs Papers vs Scissors</h1>
+			<h1>Rock - Papers - Scissors</h1>
 			<div id="round-result">
 				<div id="result"></div>
 			</div>
@@ -23,24 +23,24 @@
 			<strong>Computer Score:</strong> <span id="computer-score">0</span>
 			<strong>Player Score:</strong> <span id="player-score">0</span>
 			<div class="wrapper">
-				<button
-					class="btn play-button"
-					id="scissors"
-					onclick="playRound('scissors')"
-				>
-					Scissors
+				<button class="btn play-button" id="Pock" onclick="playRound('Rock')">
+					Rock
 				</button>
-				<button class="btn play-button" id="paper" onclick="playRound('paper')">
+				<button class="btn play-button" id="Paper" onclick="playRound('Paper')">
 					Paper
 				</button>
-				<button class="btn play-button" id="rock" onclick="playRound('rock')">
-					Rock
+				<button
+					class="btn play-button"
+					id="Scissors"
+					onclick="playRound('Scissors')"
+				>
+					Scissors
 				</button>
 				<button
 					type="submit"
 					onclick="restartGame()"
 					id="play-again"
-					class="--success-border-subtle --bs-success-text-emphasis"
+					class="btn --success-border-subtle --bs-success-text-emphasis"
 					style="display: none"
 				>
 					Play Again
