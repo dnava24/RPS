@@ -16,24 +16,36 @@
 	<body>
 		<div class="container-fluid">
 			<h1>Rock vs Papers vs Scissors</h1>
-			<div id="result">
-				<div id="round-result"></div>
+			<div id="round-result">
+				<div id="result"></div>
 			</div>
 			<div class="score"></div>
 			<strong>Computer Score:</strong> <span id="computer-score">0</span>
 			<strong>Player Score:</strong> <span id="player-score">0</span>
-			<button id="scissors" onclick="playRound('scissors')">Scissors</button>
-			<button id="paper" onclick="playRound('paper')">Paper</button>
-			<button id="rock" onclick="playRound('rock')">Rock</button>
-			<button
-				type="submit"
-				onclick="restartGame()"
-				id="play-again"
-				class="--success-border-subtle --bs-success-text-emphasis"
-				style="display: none"
-			>
-				Play Again
-			</button>
+			<div class="wrapper">
+				<button
+					class="btn play-button"
+					id="scissors"
+					onclick="playRound('scissors')"
+				>
+					Scissors
+				</button>
+				<button class="btn play-button" id="paper" onclick="playRound('paper')">
+					Paper
+				</button>
+				<button class="btn play-button" id="rock" onclick="playRound('rock')">
+					Rock
+				</button>
+				<button
+					type="submit"
+					onclick="restartGame()"
+					id="play-again"
+					class="--success-border-subtle --bs-success-text-emphasis"
+					style="display: none"
+				>
+					Play Again
+				</button>
+			</div>
 		</div>
 		<script src="app.js"></script>
 	</body>
