@@ -12,7 +12,7 @@ function handlePlayButtonClick(event) {
 }
 
 // Add click and touch event listeners to play buttons
-playButtons.forEach(button => {
+playButton.forEach(button => {
   button.addEventListener('click', handlePlayButtonClick);
   button.addEventListener('touchstart', handlePlayButtonClick);
 });
