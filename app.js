@@ -14,7 +14,7 @@ function handlePlayButtonClick(event) {
 // Add click and touch event listeners to play buttons
 playButton.forEach(button => {
   button.addEventListener('click', handlePlayButtonClick);
-  button.addEventListener('touchstart', handlePlayButtonClick);
+  button.addEventListener('touchend', handlePlayButtonClick);
 });
 
 // Get the computer's choice
