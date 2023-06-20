@@ -5,18 +5,6 @@ const totalRound = 5;
 const playButton = document.querySelectorAll(".play-button");
 
 
-// Function to handle play button click or touch events
-function handlePlayButtonClick(event) {
-  const playerSelection = event.target.id;
-  playRound(playerSelection);
-}
-
-// Add click and touch event listeners to play buttons
-playButton.forEach(button => {
-  button.addEventListener('click', handlePlayButtonClick);
-  button.addEventListener('touchend', handlePlayButtonClick);
-});
-
 // Get the computer's choice
 
 function getComputerChoice() {
