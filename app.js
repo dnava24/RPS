@@ -7,7 +7,7 @@ const playButton = document.querySelectorAll(".play-button");
 
 // Function to handle play button click or touch events
 function handlePlayButtonClick(event) {
-  const playerSelection = event.target.dataset.selection;
+  const playerSelection = event.target.id;
   playRound(playerSelection);
 }
 
@@ -50,24 +50,22 @@ function playRound(playerSelection) {
 	) {
 		roundResult = `${playerSelection} beats ${computerSelection}! Player wins!`;
 		playerScore++;
-		round++;
 	} else {
 		roundResult = `${computerSelection} beats ${playerSelection}! Computer wins!`;
 		computerScore++;
-		round++;
 	}
-
+	round++;
+	//update score
+	document.getElementById("player-score").textContent = playerScore;
+	document.getElementById("computer-score").textContent = computerScore;
 	//display round results
 	const roundResultElement = document.createElement("p");
 	roundResultElement.textContent = roundResult;
 	document.getElementById("round-result").textContent = "";
 	document.getElementById("round-result").appendChild(roundResultElement);
 
-	//update score
-	document.getElementById("player-score").textContent = playerScore;
-	document.getElementById("computer-score").textContent = computerScore;
 	//check if total round have been played
-	if (round === totalRound) {
+	if ((playerScore + computerScore) === totalRound) {
 		endGame();
         disablePlayButton();
 	}
@@ -79,11 +77,10 @@ function endGame() {
 	let winner;
 	if (playerScore > computerScore) {
 		winner = "Player";
-	} else if (playerScore < computerScore) {
+	} else if (computerScore > playerScore) {
 		winner = "Computer";
-	} else {
-		winner = "It's a TIE!";
-	}
+    } 
+
 
 	// Show button #play-again
 	document.getElementById("play-again").style.display = "inline-block";

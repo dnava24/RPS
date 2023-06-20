@@ -15,14 +15,17 @@ body {
 	background-color: var(--bg-100);
 	color: var(--text-100);
 	font-family: "Raleway", sans-serif;
+	text-align: center;
 }
 h1 {
 	color: var(--primary-100);
 }
+
 .btn {
 	background-color: var(--accent-100);
 	border-color: var(--accent-100);
 	color: var(--bg-200);
+	margin: .5em;
 }
 .btn:hover {
 	border-color: var(--accent-100);
